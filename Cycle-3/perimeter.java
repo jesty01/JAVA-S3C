@@ -15,8 +15,7 @@ import java.util.*;
         {
             System.out.println("Enter the radius of the circle in m" );
             int r=obj.nextInt();
-           // obj1.perimeter(r);
-            perimeter obj1=new perimeter(r);
+           perimeter obj1=new perimeter(r);
         }
         
         else if(n==2)
@@ -24,8 +23,7 @@ import java.util.*;
             System.out.println("Enter the base length and breadth of the rectangle in m");
             int l=obj.nextInt();
             int b=obj.nextInt();
-           // obj1.perimeter(l,b);
-          perimeter obj1=new perimeter(l,b);
+            perimeter obj1=new perimeter(l,b);
         }
         else
         System.out.println("Invalid Choice");
