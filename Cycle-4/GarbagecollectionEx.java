@@ -1,3 +1,4 @@
+//Example 1
 public class GarbagecollectionEx 
 {
     public void finalize()
@@ -13,5 +14,37 @@ public class GarbagecollectionEx
         System.gc();
 
     }
-    
+  }
+
+//Example 2
+class Student
+{
+    int a,b;
+    public void inputdata(int c,int d)
+    {
+        a=c;
+        b=d;
+     }
+    public void display()   
+    {
+         System.out.println("Value of a = "+a);
+         System.out.println("Value of b = "+b);
+     }
+    public static void main(String args[])
+    {
+         Student s1 = new Student();
+         Student s2 = new Student();
+         s1.inputdata(1,2);
+         s2.inputdata(3,4);
+         s1.display();
+         s2.display();
+         Student s3;
+         s3=s2;
+         s3.display();
+        s2=null;
+        s3.display();
+        s3=null;
+        s3.display();
+  }
 }
+
