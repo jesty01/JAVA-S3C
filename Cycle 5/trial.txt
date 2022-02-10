@@ -1,0 +1,3 @@
+Hello
+Welcome To JAVA
+Testing File Input And Output Functions
