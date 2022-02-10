@@ -1,14 +1,17 @@
+import java.io.*;
 class qn_c
 {
-	public static void main(String[] args)
+	public static void main(String[] args) throws Exception
 	{
 		try
 		{
-			
-			int a[] = {1,2,3};
-			System.out.println(a[5]);
+			FileInputStream fin = new FileInputStream("expc.txt");
+			int i;
+			while((i=fin.read())!=-1)
+				System.out.println((char)i);
+			fin.close();
 		}
-		catch(ArrayIndexOutOfBoundsException e)
+		catch(FileNotFoundException e)
 		{
 			System.out.println(e);
 		}
