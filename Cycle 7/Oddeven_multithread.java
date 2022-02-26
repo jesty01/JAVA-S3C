@@ -10,7 +10,7 @@ class Square extends Thread
     public void run()
    {
         int a=(int)Math.pow(this.n,2); 
-      System.out.println("Square is:"+a);
+      System.out.println("Square of the number is: "+a);
    } 
 }
 class Cube extends Thread
@@ -23,7 +23,7 @@ class Cube extends Thread
  public void run()
  {
       int b=(int)Math.pow(this.n,3);
-      System.out.println("Cube is:"+b);
+      System.out.println("Cube of the number is: "+b);
  }
 }
 
@@ -33,10 +33,10 @@ class Calc extends Thread
  {
    Scanner sc=new Scanner(System.in);
    int n;
-   System.out.print("Enter no of times to do:"); 
+   System.out.print("Enter no of times of execution : "); 
    n=sc.nextInt();
 
-   System.out.print("Enter the range of random numbers:");
+   System.out.print("Enter the range of random numbers: ");
    int range=sc.nextInt();
 
    Random r=new Random();
@@ -44,7 +44,7 @@ class Calc extends Thread
    {
        int x=r.nextInt(range);
        System.out.println();
-     System.out.println("The random number is:"+x);
+     System.out.println("The random number is: "+x);
        if(x%2==0)
       {
   Square s=new Square(x);
