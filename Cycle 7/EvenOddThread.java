@@ -1,4 +1,4 @@
-.public class EvenOddThread
+public class EvenOddThread
 {
     public static void main(String[] args)
     {
