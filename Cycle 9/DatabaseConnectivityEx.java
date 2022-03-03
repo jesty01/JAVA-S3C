@@ -7,7 +7,7 @@ class Main
     {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/data?autoReconnect=true&useSSL=false","root","ashu");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/data?autoReconnect=true&useSSL=false","root","jsap");
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("select * from studentdetails");
             System.out.println("No \t Name \t Age \t Place" );
